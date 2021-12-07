@@ -1,0 +1,32 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto rem(60);
+  max-width: rem(700);
+  height: rem(600);
+  background-color: var(--background-light);
+  border: rem(1) solid var(--border-color);
+
+  img {
+    width: rem(350);
+    height: rem(350);
+    margin: rem(50) auto rem(30);
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+    padding: rem(10);
+    font-size: rem(20);
+  }
+
+  .review-author {
+    text-align: right;
+  }
+}

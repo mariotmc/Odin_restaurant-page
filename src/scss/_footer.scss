@@ -1,0 +1,16 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.footer {
+  width: 100%;
+  padding: rem(15);
+  text-align: center;
+  font-size: rem(18);
+  color: inherit;
+  background-color: var(--background-light);
+  background-color: var(--background-light);
+
+  p {
+    display: inline;
+  }
+}

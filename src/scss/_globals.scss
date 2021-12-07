@@ -1,0 +1,42 @@
+@use "functions" as *;
+@use "variables" as *;
+
+html {
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-body);
+  color: var(--font-color);
+  background-image: url("https://www.zastavki.com/pictures/1600x1200/2009/Food_Pizza_Pizza_in_the_oven_011929_.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+#content {
+  height: 100%;
+}
