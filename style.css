@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Tangerine:wght@400;700&display=swap");
+:root {
+  --font-title: "Tangerine", cursive;
+  --font-body: "Montserrat", sans-serif;
+}
+
+:root {
+  --font-color: #eee;
+  --font-color-dark: #aaa;
+  --border-color: #222;
+  --background-light: rgba(0, 0, 0, 0.6);
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.9);
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-body);
+  color: var(--font-color);
+  background-image: url("https://www.zastavki.com/pictures/1600x1200/2009/Food_Pizza_Pizza_in_the_oven_011929_.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+#content {
+  height: 100%;
+}
+
+.header {
+  padding: 1.875rem 1.25rem 1.25rem;
+  text-align: center;
+  background-color: var(--background-dark);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 3.75rem;
+}
+.header h1 {
+  margin: 0rem auto 1.875rem;
+  font-family: var(--font-title);
+  font-size: 6.25rem;
+  color: var(--font-color);
+}
+.header button {
+  padding: 1.25rem;
+  font-family: inherit;
+  font-size: 1.25rem;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s;
+}
+.header button:hover {
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+
+.footer {
+  width: 100%;
+  padding: 0.9375rem;
+  text-align: center;
+  font-size: 1.125rem;
+  color: inherit;
+  background-color: var(--background-light);
+  background-color: var(--background-light);
+}
+.footer p {
+  display: inline;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 3.75rem;
+  max-width: 43.75rem;
+  height: 37.5rem;
+  background-color: var(--background-light);
+  border: 0.0625rem solid var(--border-color);
+}
+.home img {
+  width: 21.875rem;
+  height: 21.875rem;
+  margin: 3.125rem auto 1.875rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.home p {
+  margin: 0;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+}
+.home .review-author {
+  text-align: right;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin: 0 auto 3.75rem;
+  max-width: 43.75rem;
+  background-color: var(--background-light);
+  border: 0.0625rem solid var(--border-color);
+}
+.menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 18.75rem;
+  padding: 2.5rem;
+  background-color: var(--background-light);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.menu .menu-item:hover {
+  background-color: var(--background-light-hover);
+}
+.menu .menu-item img {
+  width: 40%;
+}
+.menu .menu-item h2,
+.menu .menu-item p {
+  margin: 0;
+  text-align: center;
+}
+.menu .menu-item h2 {
+  padding: 1.25rem;
+}
+.menu .left {
+  margin-left: 2.0625rem;
+}
+.menu .right {
+  margin-right: 2.0625rem;
+}
+.menu .top {
+  margin-top: 2.5rem;
+}
+.menu .bottom {
+  margin-bottom: 2.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 3.75rem;
+  max-width: 43.75rem;
+  font-size: 1.25rem;
+  background-color: var(--background-light);
+  border: 0.0625rem solid var(--border-color);
+}
+.contact .phone {
+  width: 80%;
+  margin: auto;
+  padding: 3.125rem 0.9375rem 0.9375rem;
+}
+.contact .location {
+  width: 80%;
+  margin: auto;
+  padding: 0.9375rem;
+}
+.contact .map {
+  width: 80%;
+  margin: auto;
+  padding: 0.9375rem 0.9375rem 3.125rem;
+}
+.contact .map img {
+  width: 100%;
+}
+.contact p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
